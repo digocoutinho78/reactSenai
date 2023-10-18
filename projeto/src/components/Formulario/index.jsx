@@ -19,34 +19,16 @@ export default function Formulario() {
         event.preventDefault();
         console.log('Formulário enviado!');
     }
-    function aoDigitar(propsChidren){
-
-    }
 
     return(
         <section>
             <h1>Formulário</h1>
 
             <form onSubmit={submit}>
-                <CampoTexto 
-                    label='Nome' 
-                    type='text' 
-                    placeholder='Digite seu nome...' 
-                    required={true}
-                    callBack={aoDigitar}
-                />
-                <CampoTexto 
-                    label='e-mail' 
-                    type='text' 
-                    placeholder='Digite seu email...'
-                />
-                <CaixaDeSelecao label='Unidade' options={unidades} />  
-                {/* esse options é o prop que está em caixa de seleção*/ }
-                 {/* o label também é um props   */}
-                
+                <CampoTexto label='Nome' type='text' placeholder='Digite seu nome...' required={true}  />
+           
                 <div className='cx_botoes'>
                     <Botao cor='verde'>Enviar</Botao>
-                    <Botao cor='cinza'>Cancelar</Botao>
                 </div>
             </form>
         </section>

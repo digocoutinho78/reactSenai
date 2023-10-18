@@ -1,6 +1,4 @@
-import CampoTexto from '../CampoTexto';
 import './style.css';
-
 
 export default function Botao(props) {
     function submit (event) {
@@ -9,7 +7,6 @@ export default function Botao(props) {
     }
     return(
         <button className={props.cor} >{props.children}</button>
-        
-
     );
 }
+
